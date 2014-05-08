@@ -8,23 +8,24 @@
 
             <div class="sheet-col">
 
-            	<label>Name:</label><input type="text" name="attr_character_name" />
-        		<label>Rank:</label><input type="text" name="attr_rank" />
-        		<label>XP:</label><input type="number" name="attr_xp" />
+            	<label>Player:</label><input type="text" name="attr_player_name" />
+        		<label>Campaign:</label><input type="text" name="attr_campain" />
+        		<label>GM:</label><input type="number" name="attr_gm" />
 
         	</div>
 
         	<div class="sheet-col">
         		<p style="text-align: center;">
-        			<img src="http://i.imgur.com/LczNS8W.png" style="max-height: 100px;" />
+        			<img src="" style="height:150px; width:250px;" />
         		</p>
         	</div>
 
         	<div class="sheet-col">
 
-        		<label>Setting:</label><input type="text" name="attr_setting" />
+        		<label>Character Name:</label><input type="text" name="attr_char_name" />
         		<label>Race:</label><input type="text" name="attr_race" />
-
+                <label>Class:</label><input type="text" name="attr_class">
+                <label>Level:</label><input type="text" name="attr_level">
         	</div>
 
         </div>
@@ -36,14 +37,26 @@
         	<div class="sheet-col">
 
         		<h3 style="margin-bottom: 10px;">Attributes</h3>
+                <div style="float:left;">
+            		<label>Move</label><input type="text" name='attr_move' class='sheet-short'><br />
+            		<label>Attack</label><input type="text" name='attr_attack' class='sheet-short'><br />
+            		<label>Defence</label><input type="text" name='attr_defence' class='sheet-short'><br />
+            		<label>Luck</label><input type="text" name='attr_luck' class='sheet-short'><br />
+            		<label>Magic</label><input type="text" name='attr_magic' class='sheet-short'><br />
+                    <label>Wounds</label><input type="text" name='attr_wounds' class='sheet-short'><br />
+                </div>
+                <div>
+                    <label>Speed</label><input type="text" name='attr_speed'/><br />
+                    <label>Initiative</label><input type="text" name='attr_init'/><br />
+                    <label>Ranged?</label><input type="text" name=''/><br />
+                    <label>Range</label><input type="text" name='attr_range'/><br />
+                </div>
+                <div style"float:right:">
+                    <label>XP</label><input type="text" name='attr_xp'/><br />
+                    <label>Gold</label><input type="text" name='attr_gold'/><br />
+                </div>
+                <hr style="clear:both;"/>
 
-        		<label>Agility</label><strong class='dee'>d</strong><input type="text" name='attr_agility' class='sheet-short'><button type='roll' name='roll_TestAttack' value='/roll 1d20 + @{Agility}'></button><br />
-        		<label>Smarts</label><strong class='dee'>d</strong><input type="text" name='attr_smarts' class='sheet-short'><br />
-        		<label>Spirit</label><strong class='dee'>d</strong><input type="text" name='attr_spirit' class='sheet-short'><br />
-        		<label>Strength</label><strong class='dee'>d</strong><input type="text" name='attr_strength' class='sheet-short'><br />
-        		<label>Vigor</label><strong class='dee'>d</strong><input type="text" name='attr_vigor' class='sheet-short' value='25'>
-
-                <hr />
                 
                 <h3 style="margin-bottom: 10px;">Skills</h3>
                 
@@ -60,7 +73,7 @@
 
         	</div>
 
-        	<div class="sheet-col">
+        	<!--<div class="sheet-col">
         		<h3 style="text-align: center;">Derived Stats</h3>
                 
                 <table style="width: 100%;">
@@ -94,19 +107,25 @@
                         </tr>
                     </tbody>
                 </table>
-        	</div>
+        	</div>-->
 
         	<div class="sheet-col">
 
-        		<h3>Hindrances</h3>
+        		<h3>Racial Bonus</h3>
 
-        		<textarea name="attr_hindrances"></textarea>
+        		<textarea name="attr_race_bonus"></textarea>
 
         		<hr/>
 
-        		<h3>Edges</h3>
+        		<h3>Skills</h3>
 
-        		<textarea name="attr_edges"></textarea>
+        		<textarea name="attr_skills"></textarea>
+
+                <hr />
+
+                <h3>Items</h3>
+
+                <textarea name="items"></textarea>
 
         	</div>
 
